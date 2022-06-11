@@ -12,25 +12,8 @@ pipeline
             {
                 sh 'mvn clean package'
             }
-        }
-		
-		stage('Test')
-        {
-            steps 
-            {
-                echo 'Test app'
-            }
-        }
-		
-		stage('Deploy')
-        {
-            steps 
-            {
-                echo 'Deploy app'
-            }
-        }
+        }   
     }
-	
 	post
 	{
 	
